@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;;
+}
+
 /* Layout  */
 
 #page {
@@ -232,7 +237,7 @@ h3 {
 }
 
 .side-down .user span {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .side-down .user span i {
@@ -242,6 +247,49 @@ h3 {
 
 /* Player-bar  */
 
+#player-bar .track {
+  display: flex;
+}
+
+#player-bar .track .img {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+#player-bar .track img {
+  width: 48px;
+  height: 48px;
+}
+
+#player-bar .track .name {
+  position: relative;
+  padding-left: 10px;
+  width: 70px;
+}
+
+#player-bar .track .name h4 {
+  position: absolute;
+  color: white;
+  font-size: 13px;
+  top: 30px;
+}
+
+#player-bar .track .name span {
+  position: absolute;
+  color: #646464;
+  font-size: 10px;
+  top: 45px;
+}
+
+#player-bar .track .preference {
+  padding: 35px;
+}
+
+#player-bar .track .preference i {
+  color: #646464;
+  font-size: 20px;
+  padding-left: 10px;
+}
 
 /* Media query  */
 

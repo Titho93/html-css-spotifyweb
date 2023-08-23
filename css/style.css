@@ -168,13 +168,14 @@ h3 {
   color: #646464;
 }
 
+.side-up .selector ul li {
+  padding: 5px 0;
+  font-size: 15px;
+}
+
 .side-up .selector ul i {
   font-size: 20px;
   padding-right: 5px;
-}
-
-.side-up .selector ul li {
-  padding: 5px 0;
 }
 
 .side-up .playlist {
@@ -206,6 +207,7 @@ h3 {
 
 .side-up .playlist ul li {
   padding: 5px;
+  font-size: 15px;
 }
 
 .side-down {
@@ -223,7 +225,7 @@ h3 {
 
 .side-down .install span {
   color: #646464;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .side-down .install span i {
@@ -290,6 +292,7 @@ h3 {
   font-size: 20px;
   padding-left: 10px;
 }
+
 
 /* Media query  */
 

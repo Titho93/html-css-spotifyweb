@@ -65,32 +65,96 @@
   height: calc(100% - 80px);
 }
 
-.side-down {
-  background-color: aliceblue;
-  /* eliminare  */
-  width: 100%;
-  height: 80px;
-}
-
 .side-up .logo {
-  background-color: white;
-  /* eliminare  */
   width: 70%;
-  height: 80px;
+  padding: 20px 15px;
 }
 
 .side-up .selector {
-  background-color: brown;
-  /* eliminare  */
   width: 70%;
-  height: 145px;
+  padding: 0 15px;
+}
+
+.side-up .selector ul {
+  list-style: none;
+  color: #646464;
+}
+
+.side-up .selector ul i {
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.side-up .selector ul li {
+  padding: 5px 0;
 }
 
 .side-up .playlist {
-  background-color: yellow;
-  /* eliminare  */
   width: 70%;
-  height: 330px;
+  padding-left: 15px;
+}
+
+.side-up .playlist h4 {
+  color: white;
+  padding-top: 15px;
+}
+
+.side-up .playlist ul {
+  color: #646464;
+  list-style: none;
+  padding: 5px;
+  position: relative;
+}
+
+.side-up .playlist ul i {
+  font-size: 40px;
+  padding-right: 10px;
+}
+
+.side-up .playlist ul span {
+  position: absolute;
+  top: 15px;
+}
+
+.side-up .playlist ul li {
+  padding: 5px;
+}
+
+.side-down {
+  width: 100%;
+  height: 80px;
+  padding-left: 15px;
+}
+
+.side-down .install {
+  border-bottom: 2px solid #646464;
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.side-down .install span {
+  color: #646464;
+  font-size: 17px;
+}
+
+.side-down .install span i {
+  font-size: 14px;
+  padding-right: 5px;
+}
+
+.side-down .user {
+  padding-top: 10px;
+  color: white;
+}
+
+.side-down .user span {
+  font-size: 20px;
+}
+
+.side-down .user span i {
+  font-size: 25px;
+  padding-right: 5px;
 }
 
 /* Player-bar  */

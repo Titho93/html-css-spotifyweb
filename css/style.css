@@ -71,14 +71,21 @@ h5 {
 
 .content .played .card {
   width: calc(100% / 6);
-  padding-right: 10px;
+  padding-right: 15px;
 }
 
-.content .played .card img {
+.content .hint .card {
+  width: calc(100% / 5);
+  padding-right: 15px;
+}
+
+.content .played .card img,
+.content .hint .card img {
   width: 100%;
 }
 
-.content .played .card .bio {
+.content .played .card .bio,
+.content .hint .card .bio {
   width: 100%;
   text-align: center;
   padding-top: 15px;

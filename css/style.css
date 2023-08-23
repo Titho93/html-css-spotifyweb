@@ -29,6 +29,28 @@
   overflow-y: scroll;
 }
 
+.content .list-type {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.content .list-type ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.content .list-type ul li {
+  padding: 10px 10px;
+  color: #7B7D82;
+}
+
+h2 {
+  font-size: 30px;
+  color: white;
+}
+
 /* Content/Bar  */
 
 .bar {

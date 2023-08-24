@@ -43,7 +43,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  cursor: pointer;
 }
 
 .content .list-type ul {
@@ -57,6 +56,7 @@ body {
 .content .list-type ul li {
   padding: 10px 10px;
   color: #7B7D82;
+  cursor: pointer;
 }
 
 .content .list-type ul li:hover {
@@ -187,12 +187,17 @@ h3 {
 
 .bar button {
   background-color: rgba(0,0,0,0);
-  font-size: 15px;
+  font-size: 12px;
   color: white;
   padding: 12px 40px;
   border-radius: 30px;
   margin: 20px 20px;
 }
+
+.bar button:hover {
+  font-size: 15px;
+}
+
 
 /* Side-bar  */
 
@@ -232,6 +237,11 @@ h3 {
 .side-up .long .selector ul li {
   padding: 5px 0;
   font-size: 15px;
+  cursor: pointer;
+}
+
+.side-up .long .selector ul li:hover {
+  color: white;
 }
 
 .side-up .long .selector ul i {
@@ -254,6 +264,11 @@ h3 {
   color: #646464;
   padding: 5px;
   position: relative;
+  cursor: pointer;
+}
+
+.side-up .long .playlist .new:hover {
+  color: white;
 }
 
 .side-up .long .playlist .new i {
@@ -280,6 +295,11 @@ h3 {
 .side-up .long .playlist .list ul li {
   font-size: 15px;
   padding: 7px 5px;
+  cursor: pointer;
+}
+
+.side-up .long .playlist .list ul li:hover {
+  color: white;
 }
 
 .side-down {
@@ -296,6 +316,11 @@ h3 {
   width: 90%;
   padding-top: 10px;
   padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.side-down .long .install:hover span {
+  color: white;
 }
 
 .side-down .long .install span {
@@ -396,14 +421,22 @@ h3 {
   width: 100%;
 }
 
-#player-bar .track .name h4 {
+#player-bar .track .name span {
   color: white;
-  font-size: 13px;
+  font-size: 12px;
 }
 
-#player-bar .track .name span {
+#player-bar .track .name a {
   color: #646464;
-  font-size: 10px;
+  font-size: 8px;
+  position: relative;
+  top: -10px;
+  text-decoration: none;
+}
+
+#player-bar .track .name a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 #player-bar .track .preference {
@@ -414,6 +447,11 @@ h3 {
   color: #646464;
   font-size: 17px;
   padding-left: 10px;
+  cursor: pointer;
+}
+
+#player-bar .track .preference i:hover {
+  color: white;
 }
 
 #player-bar .instrument {
@@ -435,6 +473,17 @@ h3 {
   border: 1px solid black;
   margin: 8px 10px;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.line:hover .time {
+  background-color: green;
+  border: 1px solid green;
+}
+
+.line:hover .ball  {
+  display: block;
 }
 
 .line .time {
@@ -445,23 +494,46 @@ h3 {
   border-radius: 10px;
 }
 
+.line .ball {
+  width: 13px;
+  height: 13px;
+  background-color: white;
+  border-radius: 50%;
+  display: none;
+}
+
 #player-bar .player {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 50%;
+  height: 50%;
+}
+
+#player-bar .player .keys {
+  display: flex;
+  justify-content: space-around;
+  width: calc(100% / 5);
+  height: 50%;
 }
 
 #player-bar .player .keys i {
   font-size: 15px;
-  padding: 5px 10px;
   color: white;
+  cursor: pointer;
+  padding-left: 5px;
 }
 
 #player-bar .player .keys .play i {
   font-size: 25px;
-  position: relative;
-  top: 4px;
+}
+
+#player-bar .player .keys .play i:hover {
+  font-size: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #player-bar .player .timetrack {
@@ -546,9 +618,7 @@ h3 {
 }
 
 /* DA FARE  */
-/* -button
--hover menu nav 
+/* 
 -active menu nav
 -active menu bar
--hover nel player
 -sostituire i font con gli svg */

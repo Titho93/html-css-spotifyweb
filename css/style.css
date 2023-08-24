@@ -15,12 +15,14 @@ body {
   width: 100%;
   height: calc(100vh - 90px);
   display: flex;
+  overflow: hidden;
 }
 
 #player-bar {
   background-color: #282828;
   width: 100%;
   height: 90px;
+  overflow: hidden;
 }
 
 /* Content  */
@@ -29,7 +31,7 @@ body {
   background-color: #141923;
   width: calc(100vw - 230px);
   height: 100%;
-  overflow-y: scroll;
+  overflow: auto;
 }
 
 .content .list-type {
@@ -78,23 +80,25 @@ h5 {
 
 .content .played .card {
   width: calc(100% / 6);
-  padding-right: 15px;
+  max-width: 175px;
 }
 
 .content .hint .card,
 .content .artist .card {
   width: calc(100% / 5);
-  padding-right: 15px;
+  max-width: 178px;
 }
 
 .content .played .card img,
 .content .hint .card img {
   width: 100%;
+  padding-right: 15px;
 }
 
 .content .artist .card img {
   width: 100%;
   border-radius: 50%;
+  padding-right: 15px;
 }
 
 .content .played .card .bio,
@@ -103,6 +107,7 @@ h5 {
   width: 100%;
   text-align: center;
   padding-top: 15px;
+  padding-right: 15px;
 }
 
 h3 {
@@ -113,7 +118,6 @@ h3 {
 .content .played .card .bio h5 {
   padding-left: 0;
 }
-
 
 /* Content/Bar  */
 
@@ -144,16 +148,24 @@ h3 {
   background-color: #000000;
   width: 230px;
   height: 100%;
+  min-height: 450px;
 }
 
 .side-up {
   width: 100%;
   height: calc(100% - 80px);
+  overflow: hidden;
 }
 
-.side-up .logo {
+.side-up .logo .l-desktop {
   width: 70%;
   padding: 20px 15px;
+}
+
+.side-up .logo .l-app {
+  width: 80%;
+  padding: 20px;
+  display: none;
 }
 
 .side-up .selector {
@@ -177,7 +189,8 @@ h3 {
 }
 
 .side-up .playlist {
-  width: 70%;
+  width: 100%;
+  height: 100%;
   padding-left: 15px;
 }
 
@@ -186,26 +199,36 @@ h3 {
   padding-top: 15px;
 }
 
-.side-up .playlist ul {
+.side-up .playlist .new {
   color: #646464;
-  list-style: none;
   padding: 5px;
   position: relative;
 }
 
-.side-up .playlist ul i {
+.side-up .playlist .new i {
   font-size: 40px;
   padding-right: 10px;
 }
 
-.side-up .playlist ul span {
+.side-up .playlist .new span {
   position: absolute;
   top: 15px;
 }
 
-.side-up .playlist ul li {
-  padding: 5px;
+.side-up .playlist ul {
+  color: #646464;
+  list-style: none;
+}
+
+.side-up .playlist .list {
+  width: 100%;
+  height: 43%;
+  overflow: auto;
+}
+
+.side-up .playlist .list ul li {
   font-size: 15px;
+  padding: 7px 5px;
 }
 
 .side-down {
@@ -249,44 +272,43 @@ h3 {
 #player-bar .block {
   display: flex;
   justify-content: space-between;
+  height: 90px;
+  align-items: center;
 }
 
 #player-bar .track {
   display: flex;
+  align-items: center;
+  width: 15%;
 }
 
 #player-bar .track .img {
-  padding-top: 20px;
+  width: 100%;
   padding-left: 20px;
 }
 
 #player-bar .track img {
-  width: 48px;
-  height: 48px;
+  min-width: 25px;
+  width: 100%;
 }
 
 #player-bar .track .name {
-  position: relative;
   padding-left: 10px;
-  width: 70px;
+  width: 100%;
 }
 
 #player-bar .track .name h4 {
-  position: absolute;
   color: white;
   font-size: 13px;
-  top: 30px;
 }
 
 #player-bar .track .name span {
-  position: absolute;
   color: #646464;
   font-size: 10px;
-  top: 45px;
 }
 
 #player-bar .track .preference {
-  padding: 35px;
+  width: 100%;
 }
 
 #player-bar .track .preference i {
@@ -296,8 +318,9 @@ h3 {
 }
 
 #player-bar .instrument {
-  padding-top: 34px;
   display: flex;
+  align-items: center;
+  width: 215px;
 }
 
 #player-bar .instrument i {
@@ -307,7 +330,7 @@ h3 {
 }
 
 .line {
-  width: 120px;
+  width: 80px;
   height: 8px;
   background-color: #5B5B5B;
   border: 1px solid black;
@@ -324,7 +347,10 @@ h3 {
 }
 
 #player-bar .player {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
 }
 
 #player-bar .player .keys i {
@@ -380,5 +406,13 @@ h3 {
 
   .bar {
     width: calc(100vw - 50px);
+  }
+
+  .side-up .logo .l-app {
+    display: block;
+  }
+
+  .side-up .logo .l-desktop {
+    display: none;
   }
 }

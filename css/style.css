@@ -37,13 +37,16 @@ body {
 .content .list-type {
   padding-top: 100px;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .content .list-type ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .content .list-type ul li {
@@ -279,7 +282,7 @@ h3 {
 #player-bar .track {
   display: flex;
   align-items: center;
-  width: 15%;
+  width: 200px;
 }
 
 #player-bar .track .img {
@@ -289,7 +292,7 @@ h3 {
 
 #player-bar .track img {
   min-width: 25px;
-  width: 100%;
+  width: 90%;
 }
 
 #player-bar .track .name {
@@ -319,8 +322,8 @@ h3 {
 
 #player-bar .instrument {
   display: flex;
-  align-items: center;
-  width: 215px;
+  align-items: flex-end;
+  width: 200px;
 }
 
 #player-bar .instrument i {
@@ -350,32 +353,34 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70%;
+  width: 50%;
 }
 
 #player-bar .player .keys i {
-  font-size: 20px;
-  padding: 5px 15px;
+  font-size: 15px;
+  padding: 5px 10px;
   color: white;
 }
 
 #player-bar .player .keys .play i {
-  font-size: 35px;
+  font-size: 25px;
   position: relative;
-  top: 6px;
+  top: 4px;
 }
 
 #player-bar .player .timetrack {
   display: flex;
+  width: 80%;
 }
 
 #player-bar .player .timetrack .line {
-  width: 430px;
+  width: 80%;
   margin-top: 15px;
+  margin: auto;
 }
 
 #player-bar .player .timetrack .line .time {
-  width: 80px;
+  width: 30%;
 }
 
 #player-bar .player .timetrack span {

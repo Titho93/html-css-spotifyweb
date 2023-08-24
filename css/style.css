@@ -9,6 +9,10 @@ body {
   font-family: 'Open Sans', sans-serif;;
 }
 
+.none {
+  display: none;
+}
+
 /* Layout  */
 
 #page {
@@ -158,79 +162,78 @@ h3 {
 .side-up {
   width: 100%;
   height: calc(100% - 80px);
+}
+
+.side-up .long {
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
-.side-up .logo .l-desktop {
+.side-up .long .logo .img {
   width: 70%;
   padding: 20px 15px;
 }
 
-.side-up .logo .l-app {
-  width: 80%;
-  padding: 20px;
-  display: none;
-}
-
-.side-up .selector {
+.side-up .long .selector {
   width: 70%;
   padding: 0 15px;
 }
 
-.side-up .selector ul {
+.side-up .long .selector ul {
   list-style: none;
   color: #646464;
 }
 
-.side-up .selector ul li {
+.side-up .long .selector ul li {
   padding: 5px 0;
   font-size: 15px;
 }
 
-.side-up .selector ul i {
+.side-up .long .selector ul i {
   font-size: 20px;
   padding-right: 5px;
 }
 
-.side-up .playlist {
+.side-up .long .playlist {
   width: 100%;
   height: 100%;
   padding-left: 15px;
 }
 
-.side-up .playlist h4 {
+.side-up .long .playlist h4 {
   color: white;
   padding-top: 15px;
 }
 
-.side-up .playlist .new {
+.side-up .long .playlist .new {
   color: #646464;
   padding: 5px;
   position: relative;
 }
 
-.side-up .playlist .new i {
+.side-up .long .playlist .new i {
   font-size: 40px;
   padding-right: 10px;
 }
 
-.side-up .playlist .new span {
+.side-up .long .playlist .new span {
   position: absolute;
   top: 15px;
 }
 
-.side-up .playlist ul {
+.side-up .long .playlist ul {
   color: #646464;
   list-style: none;
 }
 
-.side-up .playlist .list {
+.side-up .long .playlist .list {
   width: 100%;
   height: 43%;
   overflow: auto;
 }
 
-.side-up .playlist .list ul li {
+.side-up .long .playlist .list ul li {
   font-size: 15px;
   padding: 7px 5px;
 }
@@ -238,38 +241,86 @@ h3 {
 .side-down {
   width: 100%;
   height: 80px;
+}
+
+.side-down .long {
   padding-left: 15px;
 }
 
-.side-down .install {
+.side-down .long .install {
   border-bottom: 2px solid #646464;
   width: 90%;
   padding-top: 10px;
   padding-bottom: 5px;
 }
 
-.side-down .install span {
+.side-down .long .install span {
   color: #646464;
   font-size: 15px;
 }
 
-.side-down .install span i {
+.side-down .long .install span i {
   font-size: 14px;
   padding-right: 5px;
 }
 
-.side-down .user {
+.side-down .long .user {
   padding-top: 10px;
   color: white;
 }
 
-.side-down .user span {
+.side-down .long .user span {
   font-size: 18px;
 }
 
-.side-down .user span i {
+.side-down .long .user span i {
   font-size: 25px;
   padding-right: 5px;
+}
+
+/* short bar  */
+
+.side-up .short .logo img {
+  width: 100%;
+  padding: 8px;
+}
+
+.side-up .short .list-item li {
+  padding: 1px 8px;
+}
+
+.side-down .short {
+  width: 30px;
+  position: relative;
+}
+
+.side-down .short ul {
+  list-style: none;
+}
+
+.side-down .short li:first-child {
+  width: 20px;
+  position: absolute;
+  top: 0;
+  left: 12px;
+}
+
+.side-down .short .user {
+  background-color: #5B5B5B;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+.side-down .short li:last-child {
+  position: absolute;
+  top: 37px;
+  left: 6px;
+}
+
+.side-down .short .user img {
+  width: 30px;
+  padding-left: 5px;
 }
 
 /* Player-bar  */
@@ -439,11 +490,13 @@ h3 {
     width: calc(100vw - 50px);
   }
 
-  .side-up .logo .l-app {
+  .side-bar .long {
+    display: none;
+  }
+
+  .side-bar .short {
     display: block;
   }
 
-  .side-up .logo .l-desktop {
-    display: none;
-  }
+
 }

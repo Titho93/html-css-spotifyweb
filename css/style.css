@@ -43,6 +43,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  cursor: pointer;
 }
 
 .content .list-type ul {
@@ -56,6 +57,10 @@ body {
 .content .list-type ul li {
   padding: 10px 10px;
   color: #7B7D82;
+}
+
+.content .list-type ul li:hover {
+  color: white;
 }
 
 h2 {
@@ -101,6 +106,7 @@ h5 {
 .content .hint .card .img,
 .content .artist .card .img {
   position: relative;
+  cursor: pointer;
 }
 
 .content .played .card .img span,
@@ -538,3 +544,11 @@ h3 {
 
 
 }
+
+/* DA FARE  */
+/* -button
+-hover menu nav 
+-active menu nav
+-active menu bar
+-hover nel player
+-sostituire i font con gli svg */

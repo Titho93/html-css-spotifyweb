@@ -251,11 +251,11 @@ h3 {
 
 .side-up .long .selector ul li {
   padding: 5px 15px;
-  border-left: 2px solid black;
+  border-left: 3px solid black;
 }
 
 .side-up .long .selector ul .active {
-  border-left: 2px solid green;
+  border-left: 3px solid #008000;
 }
 
 .side-up .long .selector ul li a {
@@ -661,7 +661,3 @@ h3 {
 
 
 }
-
-/* DA FARE  */
-/* 
--active menu nav

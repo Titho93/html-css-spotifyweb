@@ -3,7 +3,7 @@
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <meta charset="UTF-8">
@@ -24,9 +24,25 @@
           </div>
           <div class="selector">
             <ul>
-              <li><i class="fa-solid fa-house"></i> Home</li>
-              <li><i class="fa-solid fa-magnifying-glass"></i> Cerca</li>
-              <li><i class="fa-solid fa-book-open"></i> La tua libreria</li>
+              <li class="active">
+                <a href="#">
+                  <img src="img/home.svg" alt="Home">
+                  <span>Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/search.svg" alt="Search">
+                  <span>Cerca</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/libreria.svg" alt="Libreria">
+                  <span>La tua libreria</span>
+                </a>
+              </li>
+              
             </ul>
           </div>
           <div class="playlist">
@@ -66,12 +82,13 @@
             <span><i class="fa-regular fa-circle-down"></i> Installa app</span>
           </div>
           <div class="user">
-            <span><i class="fa-regular fa-circle-user"></i> John Doe</span>
+            <span>
+              <img src="img/profile.svg" alt="Profile"> John Doe</span>
           </div>
         </div>
         <div class="short none">
           <ul>
-            <li><svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Download icon</title><path d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z" fill="#646464" fill-rule="evenodd"/></svg></li>
+            <li><img src="img/download.svg" alt="Download"></li>
             <li>
               <div class="user">
                 <img src="img/profile.svg" alt="profile">

@@ -375,6 +375,15 @@ h3 {
   padding: 1px 8px;
 }
 
+.side-up .short .list-item li img {
+  opacity: 0.5;
+}
+
+.side-up .short .list-item li img:hover {
+  opacity: 2;
+  cursor: pointer;
+}
+
 .side-down .short {
   width: 30px;
   position: relative;

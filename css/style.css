@@ -572,20 +572,26 @@ h3 {
   padding-left: 5px;
 }
 
-#player-bar .player .keys .play i {
-  font-size: 25px;
+#player-bar .player .keys .play {
+  width: 30px;
 }
 
-#player-bar .player .keys .play i:hover {
-  font-size: 27px;
+#player-bar .player .keys .play i {
+  font-size: 25px;
+  vertical-align: middle;
+}
+
+#player-bar .player .keys .play:hover i {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 30px;
 }
 
 #player-bar .player .timetrack {
   display: flex;
   width: 80%;
+  min-width: 150px;
 }
 
 #player-bar .player .timetrack .line {
